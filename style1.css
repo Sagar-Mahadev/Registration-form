@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eaf4f4;
+  text-align: center;
+}
+
+div {
+  width: 400px;
+  background-color: #ffffff;
+  border: 2px solid #b8dada;
+  border-radius: 10px;
+  margin: auto;
+}
+
+h2 {
+  color: #477b86;
+}
+
+p {
+  color: #526777;
+}
+
+a {
+  color: #2563eb;
+}
