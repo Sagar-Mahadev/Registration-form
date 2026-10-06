@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Student Registration Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Student Registration</h2>
+
+      <form action="success.html" method="get">
+        <label for="studentid">Student ID</label><br />
+        <input
+          type="text"
+          id="studentid"
+          name="studentid"
+          placeholder="Enter Student ID"
+          title="Enter 3 to 15 letters or numbers"
+          pattern="[A-Za-z0-9]{3,15}"
+          required
+        />
+        <br /><br />
+
+        <label for="name">Student Name</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter Full Name"
+          title="Enter your full name"
+          pattern="[A-Za-z ]{3,50}"
+          required
+        />
+        <br /><br />
+
+        <label for="email">Email Address</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+          title="Enter a valid email address"
+          required
+        />
+        <br /><br />
+
+        <label for="mobile">Mobile Number</label><br />
+        <input
+          type="tel"
+          id="mobile"
+          name="mobile"
+          placeholder="Enter 10-digit mobile number"
+          title="Enter a valid 10-digit Indian mobile number"
+          pattern="[6-9][0-9]{9}"
+          minlength="10"
+          maxlength="10"
+          required
+        />
+        <br /><br />
+
+        <label for="course">Course</label><br />
+        <select id="course" name="course" title="Select your course" required>
+          <option value="">-- Select Course --</option>
+          <option value="MERN">MERN</option>
+          <option value="MEAN">MEAN</option>
+          <option value="JAVA">JAVA</option>
+          <option value="PYTHON">PYTHON</option>
+          <option value="AI">AI</option>
+          <option value="ML">ML</option>
+        </select>
+        <br /><br />
+
+        <label for="dob">Date of Birth</label><br />
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          title="Select your date of birth"
+          required
+        />
+        <br /><br />
+
+        <button type="submit" title="Submit your registration">Register</button>
+
+        <button
+          type="reset"
+          class="reset-btn"
+          title="Clear all entered details"
+        >
+          Reset
+        </button>
+
+        <br /><br />
+      </form>
+    </div>
+  </body>
+</html>
